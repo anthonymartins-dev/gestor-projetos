@@ -4,6 +4,10 @@ Quadro de tarefas para estúdios, agências e pequenas equipas: quem está a faz
 está atrasado e quanto tempo levou cada coisa. Projeto 5 de uma série de 6 ferramentas para
 pequenos negócios.
 
+**Demonstração online:** https://gestor-projetos-orpin.vercel.app
+
+A API gratuita adormece quando ninguém a usa: no primeiro acesso pode demorar cerca de 30 segundos a acordar. Os dados são de demonstração e qualquer pessoa os pode alterar.
+
 ## Funcionalidades
 
 - **Painel** com projetos ativos, tarefas atrasadas, entregas dos próximos 7 dias, horas da semana, carga de cada pessoa e gráfico de horas
