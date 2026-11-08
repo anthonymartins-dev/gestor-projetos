@@ -9,7 +9,13 @@ types.setTypeParser(1114, (v) => v.replace(' ', 'T'));
 types.setTypeParser(1700, parseFloat);
 
 const app = express();
-app.use(cors());
+// Em produção, CORS_ORIGIN lista os endereços do site (separados por vírgulas).
+// Sem ela (desenvolvimento), aceita qualquer origem.
+const origens = (process.env.CORS_ORIGIN || '').split(',').map((o) => o.trim()).filter(Boolean);
+app.use(cors(origens.length ? { origin: origens } : undefined));
+
+// Usado pelo alojamento para saber se a API está viva.
+app.get('/health', (req, res) => res.json({ ok: true }));
 app.use(express.json());
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
