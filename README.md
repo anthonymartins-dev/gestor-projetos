@@ -8,6 +8,8 @@ pequenos negócios.
 
 A API gratuita adormece quando ninguém a usa: no primeiro acesso pode demorar cerca de 30 segundos a acordar. Os dados são de demonstração e qualquer pessoa os pode alterar.
 
+![Captura de ecrã](docs/painel.png)
+
 ## Funcionalidades
 
 - **Painel** com projetos ativos, tarefas atrasadas, entregas dos próximos 7 dias, horas da semana, carga de cada pessoa e gráfico de horas
